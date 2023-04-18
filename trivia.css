@@ -1,0 +1,120 @@
+body {
+  background:#f4f3ee;
+ color:#222222;
+ font-family: 'Bebas Neue', cursive;
+}
+
+.logo {
+width: 180px;
+height: 250px;
+}
+
+.container {
+ display: grid;
+ text-align: center;
+} 
+
+.title {
+ font: italic bold 40px/2 
+ 
+}
+
+.subtitle {
+ font-size: 25px;
+}
+
+label {
+  font-style: italic;
+  font-size: 20px;
+}
+
+#nombre {
+  border-radius: 5px;
+  
+}
+
+.contenedor-botones {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+ 
+
+}
+
+.primary-botton-hombre {
+  border-radius: 5px;
+  height: 40px;
+  border-right: 50px;
+}
+
+.primary-botton-mujer {
+  border-radius: 5px;
+  height: 40px;
+  margin-left: 20px;
+}
+
+
+.preguntas {
+   display: none;
+   text-align: center;
+ }
+.resultados {
+   display: none;
+   text-align: center;
+     }
+
+.preguntas {
+   display: none;
+ }
+.resultados {
+   display: none;
+     }
+footer {
+       position: fixed;
+       bottom: 0;
+       right: 0;
+       color:#222222;
+       padding: 10px;
+}
+body {
+  background:#f4f3ee;
+ color:#222222;
+ font-family: 'Bebas Neue', cursive;
+}
+.container {
+ display: grid;
+ text-align: center;
+} 
+
+.title {
+ font: italic bold 40px/2 
+ 
+}
+
+.subtitle {
+ font-size: 25px;
+}
+
+.preguntas {
+   display: none;
+   text-align: center;
+ }
+.resultados {
+   display: none;
+   text-align: center;
+     }
+
+.preguntas {
+   display: none;
+ }
+.resultados {
+   display: none;
+     }
+footer {
+       position: fixed;
+       bottom: 0;
+       right: 0;
+       color:#222222;
+       padding: 10px;
+}
+

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>  
+    
+
+<head>
+	<title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="trivia.css">
+
+</head>
+<body>
+	<h1>Trivia</h1>
+    <div class="container" id="primerapantalla">
+        <div class="portada">
+          <img src="./img/trivia.png" alt="logo" class="logo">
+    
+          <h1 class="title">Bienvenido a la trivia Laboratoria</h1>
+          <p class="subtitle">Para comenzar ingresa tu nickname</p>
+    
+            <div>
+            <label  class="label">Nombre</label>
+            <input type="text" id="nombre" placeholder="Anita Ortega" class="input">
+            <br>
+            <br>
+    
+                <div class="boton1"> 
+                    <input type="button" value="Comenzar" class="primary-button">
+                </div>
+          
+            </div>
+
+        </div>
+    </div>
+
+	<div class="container">
+
+        <section id="q1">
+           <h3>1: ¿Quien se le considera la primera programadora de la historia?</h3>
+                <label>
+              <input type="radio" name="q1" value="a"> Hedy Lamarr
+            </label>
+        <br>
+                <label>
+              <input type="radio" name="q1" value="b"> Ada Lovelace
+            </label>
+        <br>
+                <label>
+              <input type="radio" name="q1" value="c"> Grace Hopper
+            </label>
+        <br>
+        </section>
+        
+            
+        <section class="q2">
+          <h3> 2: ¿Quien es la cantante?</h3>
+              <label>
+            <input type="radio" name="q2" value="a"> Shakira
+          </label>
+        <br>
+              <label>
+            <input type="radio" name="q2" value="b"> Karol G
+          </label>
+        <br>
+              <label>
+            <input type="radio" name="q2" value="c"> Denisse Rosental
+          </label>
+        <br>
+        </section>
+    
+        <section class="q3">
+          <h3>3: ¿Quien fue la primera mujer en recibir un premio Nobel?</h3>
+              <label>
+            <input type="radio" name="q3" value="a"> Lise Meitner
+          </label>
+        <br>
+              <label>
+            <input type="radio" name="q3" value="b"> Gerty Cori
+          </label>
+        <br>
+              <label>
+            <input type="radio" name="q3" value="c"> Marie Curie
+          </label><br>
+            <br>
+        </section>
+            
+            
+            <input type="button" value="Responder y ver resultados">
+        <h2>Respuestas acertadas
+          <span id="resultado"></span>
+        </h2>
+        </div>
+
+	<script src="trivia.js"></script>
+</body>
+</html>
