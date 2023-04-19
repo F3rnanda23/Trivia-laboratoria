@@ -20,12 +20,16 @@ height: 250px;
 }
 
 .subtitle {
- font-size: 25px;
+ font-size: px;
 }
 
 label {
   font-style: italic;
   font-size: 20px;
+}
+
+.contenedor-nombre {
+padding: 30px;
 }
 
 #nombre {
@@ -65,10 +69,14 @@ label {
 
 .preguntas {
    display: none;
+   text-align: center;
  }
 .resultados {
-   display: none;
-     }
+  display: none;
+  text-align: center;
+  }
+
+     
 footer {
        position: fixed;
        bottom: 0;
@@ -76,45 +84,5 @@ footer {
        color:#222222;
        padding: 10px;
 }
-body {
-  background:#f4f3ee;
- color:#222222;
- font-family: 'Bebas Neue', cursive;
-}
-.container {
- display: grid;
- text-align: center;
-} 
 
-.title {
- font: italic bold 40px/2 
- 
-}
-
-.subtitle {
- font-size: 25px;
-}
-
-.preguntas {
-   display: none;
-   text-align: center;
- }
-.resultados {
-   display: none;
-   text-align: center;
-     }
-
-.preguntas {
-   display: none;
- }
-.resultados {
-   display: none;
-     }
-footer {
-       position: fixed;
-       bottom: 0;
-       right: 0;
-       color:#222222;
-       padding: 10px;
-}
 
