@@ -53,13 +53,13 @@ boton.addEventListener('click', function() {
 
 
   if (correctas === 3) { // Cambio de 2 a 3
-    //alert('Amiga, todas las respuestas son correctas!');
+    alert('Amiga, todas las respuestas son correctas!');
   } else if (correctas === 2) {
-    //alert('Amiga, acertaste dos respuestas');
+    alert('Amiga, acertaste dos respuestas');
   } else if (correctas === 1) {
-    //alert('Amiga, solo acertaste una respuesta');
+    alert('Amiga, solo acertaste una respuesta');
   } else {
-    //alert('Amiga, no acertaste ninguna respuesta');
+    alert('Amiga, no acertaste ninguna respuesta');
   }
 
   numCorrectas.textContent = `Tuviste ${correctas} respuestas correctas`;
