@@ -3,8 +3,11 @@ const container = document.querySelector('#primerapantalla');
 const preguntas = document.querySelector('#segundapantalla');
 const resultados = document.querySelector('.resultados');
 const numCorrectas = document.querySelector('#num-correctas');
+const botonHombres = document.querySelector('.primary-botton-hombre');
 
-
+botonHombres.addEventListener('click', function() {
+  window.location.href = 'https://profound-truffle-35a116.netlify.app/';
+});
 
 boton1.addEventListener('click', function() {
   container.style.display = 'none';  // al hacer click se va oculta.
