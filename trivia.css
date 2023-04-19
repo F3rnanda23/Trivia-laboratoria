@@ -67,15 +67,6 @@ padding: 30px;
    text-align: center;
      }
 
-.preguntas {
-   display: none;
-   text-align: center;
- }
-.resultados {
-  display: none;
-  text-align: center;
-  }
-
      
 footer {
        position: fixed;
