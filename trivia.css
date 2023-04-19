@@ -7,17 +7,17 @@ body {
 .texto {
   position: absolute;
   z-index: 2; 
-  top: 46%;
-  left: 30%;
+  top: 50%;
+  left: 39%;
   transform: translate(-50%, -50%);  
-  color: #7d0a38;
+  color: #f4f3ee;
   text-align: center;
 }
 
 .fondo {
   position: absolute;
   z-index: 1;
-  top: 46%;
+  top: 45%;
   left: 40%;
   transform: translate(-50%, -50%);  
   text-align: center;
@@ -25,10 +25,15 @@ body {
   height: 600px;
 }
 .logo {
-  margin-top: 20px;
-  margin-right: 20px; 
-  float: right; 
+  margin-top: 40px;
+  margin-right: 10px;
+  float: right;
+  margin-left: 129px;
+  width: 392px;
+  height: 420px;
 }
+
+
 .container {
   display: grid;
   text-align: center;
