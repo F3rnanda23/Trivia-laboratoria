@@ -4,34 +4,49 @@ body {
  font-family: 'Bebas Neue', cursive;
 }
 
-.portada2 {
+/* .portada2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  background-image: url('./expls.png');
-  background-size: cover;
+   background-image: url('./expls.png');
+  background-size: cover; 
   background-position: center center;
-  width: 800px;
-  height: 800px;
-}
-.texto {
+  width: 70%;
+  height: 100vh; 
+}  */
+
+
+  texto {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #f4f3ee;
-}
+  z-index: 1; 
+  top: 46%;
+  left: 30%;
+  transform: translate(-50%, -50%);  
+  color: #7d0a38;
+  text-align: center;
+    
+} 
 
 .logo {
-  position: absolute;
-  right: 20px;
-  top: 60px;
+  margin-top: 20px;
+  margin-left: 20px;
+  
+}
+
+.fondo {
+  display: flex;
+  height: 20%;
+  width: 20%;
+  
 }
 
 
 .container {
  display: grid;
  text-align: center;
- width: 900px;
- height: 900px;
+ width: 200px;
+ height: 200px;
 } 
 
 .title {
