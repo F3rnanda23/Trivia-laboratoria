@@ -1,83 +1,101 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Trivia bacan</title>
+    <title>Trivia bacan</title>
     <link rel="stylesheet" type="text/css" href="trivia.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    
-    <div class="container" id="primerapantalla">
-        <div class="portada">
-          <img src="./trivia2.2.png" alt="logo" class="logo">
-    
-          <h1 class="title">Bienvenido a la trivia Laboratoria</h1>
-          <p class="subtitle">Para comenzar ingresa tu nombre</p>
-    
-            <div class="contenedor-nombre ">
-            <label  class="label">Nombre</label>
-            <input type="text" id="nombre" placeholder="Simone de Beauvoir" class="input">
-            <br>
-            <br>
 
-                <section class="contenedor-botones">
-                    <div class="boton-hombre"> 
-                        <input type="button" value="Hombres detacados" class="primary-botton-hombre">
-                    </div>
     
-                    <div class="boton1"> 
-                         <input type="button" value="Mujeres destacadas" class="primary-botton-mujer">
-                    </div>
-                </section>
-          
-            </div>
+<div class="container" id="primerapantalla">
+    <div class="logo">
+        <img src="./trivia2.2.png" alt="logo" class="logo">
+    </div>
 
+
+    <div>
+        <div class="fondo">
+            <img src="./expls.png" alt="explosion">
         </div>
+
+        <div class="texto">
+            <h1 class="title">Bienvenido a la trivia Laboratoria</h1>
+            <p class="subtitle">Para comenzar ingresa tu nombre</p>
+
+            <div>
+                <label class="label">Nombre</label>
+                <input type="text" id="nombre" placeholder="Simone de Beauvoir" class="input">
+                <br>
+                <br>
+
+                    <section class="contenedor-botones">
+                        <div class="boton-hombre">
+                            <input type="button" value="Hombres detacados" class="primary-botton-hombre">
+                        </div>
+
+                        <div class="boton1">
+                            <input type="button" value="Mujeres destacadas" class="primary-botton-mujer">
+                        </div>
+                    </section>
+
+                <br>
+                <br>
+
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+    <div class="preguntas" id="segundapantalla">
+        <form>
+            <p>Pregunta 1: ¿Quien se le considera la primera programadora de la historia?</p>
+            <label id="Hedy"><input id="Hedy" type="radio" name="q1" value="a"> Hedy Lamarr</label><br>
+            <label id="ada"><input id="ada" type="radio" name="q1" value="b" data-correct> Ada Lovelace</label><br>
+            <label id="Grace"><input id="Grace" type="radio" name="q1" value="c"> Grace Hopper</label><br>
+
+            <p>Pregunta 2: ¿Qué país fue el primero en otorgar el derecho al voto a las mujeres en 1893?</p>
+            <label id="Reino"><input id="Reino" type="radio" name="q2" value="a"> Reino Unido</label><br>
+            <label id="Canada"><input id="Canada" type="radio" name="q2" value="b"> Canada</label><br>
+            <label id="nueva"><input type="radio" name="q2" value="c" data-correct> Nueva Zelanda</label><br>
+
+            <p>Pregunta 3:¿Quien fue la primera mujer en recibir un premio Nobel?</p>
+            <label id="Lise"><input id="Lise" type="radio" name="q3" value="a"> Lise Meitner</label><br>
+            <label id="Gerty"><input id="Gerty" type="radio" name="q3" value="b"> Gerty Cori</label><br>
+            <label id="marie"><input type="radio" name="q3" value="c" data-correct> Marie Curie</label><br>
+
+
+            <br>
+
+            <input type="button" value="Responder y ver resultados" id="boton">
+        </form>
     </div>
 
 
 
-	<div class="preguntas" id="segundapantalla">
-    <form>
-		<p>Pregunta 1: ¿Quien se le considera la primera programadora de la historia?</p>
-		<label id="Hedy"><input id="Hedy" type="radio" name="q1" value="a"> Hedy Lamarr</label><br>
-		<label id="ada"><input  id="ada" type="radio" name="q1" value="b" data-correct> Ada Lovelace</label><br>
-		<label id="Grace"><input   id="Grace" type="radio" name="q1" value="c"> Grace Hopper</label><br>
-		
-		<p>Pregunta 2: ¿Qué país fue el primero en otorgar el derecho al voto a las mujeres en 1893?</p>
-		<label id="Reino" ><input id="Reino" type="radio" name="q2" value="a"> Reino Unido</label><br>
-		<label id= "Canada"><input id="Canada" type="radio" name="q2" value="b"> Canada</label><br>
-		<label id="nueva"><input type="radio" name="q2" value="c" data-correct> Nueva Zelanda</label><br>
 
-        <p>Pregunta 3:¿Quien fue la primera mujer en recibir un premio Nobel?</p>
-		<label id="Lise"><input id="Lise"  type="radio" name="q3" value="a">  Lise Meitner</label><br>
-		<label id="Gerty"><input id="Gerty"  type="radio" name="q3" value="b" > Gerty Cori</label><br>
-		<label id="marie"><input type="radio" name="q3" value="c" data-correct> Marie Curie</label><br>
-		
-		
-        <br>
-
-		<input type="button" value="Responder y ver resultados" id="boton">
-	</form>
-</div>
-
-
-
-
-<div class="resultados">
-    <h2>Resultados</h2>
-    <p id="num-correctas"></p>
-    <button id="boton-reiniciar" , onclick = "window.location.reload()">Volver a jugar</button>
-</div>
+    <div class="resultados">
+        <h2>Resultados</h2>
+        <p id="num-correctas"></p>
+        <button id="boton-reiniciar" , onclick="window.location.reload()">Volver a jugar</button>
+    </div>
 
 
 
 
 
-<script src="trivia.js"></script>
+    <script src="trivia.js"></script>
 
-<footer>
-    <p>Cuando las mujeres avanzan, toda la humanidad avanza - Phumzile Mlambo-Ngcuka</p>
-  </footer>
+    <footer>
+        <p>Cuando las mujeres avanzan, toda la humanidad avanza - Phumzile Mlambo-Ngcuka</p>
+    </footer>
 </body>
