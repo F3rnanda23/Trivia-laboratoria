@@ -141,7 +141,25 @@ button, input[type="button"] {
    text-align: center;
      }
 
-     
+.fondo1{
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: 62%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 413px;
+  height: 413px;
+}
+.texto1{
+  position: absolute;
+  z-index: 2; 
+  top: 44%;
+  left: 63%;
+  transform: translate(-50%, -50%);  
+  color:#312d2a;
+  text-align: center;
+}
 footer {
        position: fixed;
        bottom: 0;
