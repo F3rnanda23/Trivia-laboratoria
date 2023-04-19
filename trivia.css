@@ -1,7 +1,7 @@
 body {
   background:#f4f3ee;
  color:#222222;
- font-family: 'Bebas Neue', cursive;
+ font-family: 'Bebas Neue';
 }
 
 .texto {
@@ -44,7 +44,7 @@ body {
 
 
 .title {
- font: italic bold 40px/2 
+ font: 'Bebas Neue'; 
  
 }
 
@@ -53,7 +53,7 @@ body {
 }
 
 label {
-  font-style: italic;
+  font-style: 'Bebas Neue';
   font-size: 20px;
 }
 
@@ -74,12 +74,24 @@ padding: 30px;
  
 
 }
+button, input[type="button"] {
+  background: #312d2a;
+  color: #ede0cf;
+  padding: 4.18px 5.32px 4.03px;
+  border-radius: 80px;
+  min-width: -11.77px;
+  font-family: 'Bebas Neue';
+  font-size: 1.25rem;
+}
 
 .primary-botton-hombre {
-  border-radius: 5px;
-  height: 40px;
-  border-right: 50px;
-  border-radius: 12px;
+    background: #312d2a;
+    color: #ede0cf;
+    padding: 4.18px 5.32px 4.03px;
+    border-radius: 80px;
+    min-width: -11.77px;
+    font-family: 'Bebas Neue';
+    font-size: 1.25rem;
 }
 
 .primary-botton-mujer {
@@ -87,6 +99,13 @@ padding: 30px;
   height: 40px;
   margin-left: 20px;
   border-radius: 50%;
+  background: #312d2a;
+  color: #ede0cf;
+  padding: 4.18px 5.32px 4.03px;
+  border-radius: 80px;
+  min-width: -11.77px;
+  font-family: 'Bebas Neue';
+  font-size: 1.25rem;
 }
 
 
