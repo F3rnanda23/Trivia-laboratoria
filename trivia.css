@@ -10,7 +10,7 @@ body {
   top: 50%;
   left: 39%;
   transform: translate(-50%, -50%);  
-  color: #f4f3ee;
+  color: #ffcedd;
   text-align: center;
 }
 
@@ -25,14 +25,13 @@ body {
   height: 600px;
 }
 .logo {
-  margin-top: 40px;
+  margin-top: 57px;
   margin-right: 10px;
   float: right;
-  margin-left: 129px;
-  width: 392px;
-  height: 420px;
+  margin-left: 163px;
+  width: 238px;
+  height: 381px;
 }
-
 
 .container {
   display: grid;
@@ -71,6 +70,7 @@ padding: 30px;
   justify-content: center;
   text-align: center;
   display: flex;
+  border-radius: 12px;
  
 
 }
@@ -79,12 +79,14 @@ padding: 30px;
   border-radius: 5px;
   height: 40px;
   border-right: 50px;
+  border-radius: 12px;
 }
 
 .primary-botton-mujer {
   border-radius: 5px;
   height: 40px;
   margin-left: 20px;
+  border-radius: 50%;
 }
 
 
