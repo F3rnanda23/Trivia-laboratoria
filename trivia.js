@@ -4,6 +4,8 @@ const preguntas = document.querySelector('#segundapantalla');
 const resultados = document.querySelector('.resultados');
 const numCorrectas = document.querySelector('#num-correctas');
 const botonHombres = document.querySelector('.primary-botton-hombre');
+const nombreInput = document.querySelector('#nombre');
+
 
 botonHombres.addEventListener('click', function() {
   window.location.href = 'https://profound-truffle-35a116.netlify.app/';
@@ -12,7 +14,9 @@ botonHombres.addEventListener('click', function() {
 boton1.addEventListener('click', function() {
   container.style.display = 'none';  // al hacer click se va oculta.
   preguntas.style.display = 'block';
-  
+  const nombre = nombreInput.value;
+  alert(`Hola ${nombre}!, vamos a jugar!!`);
+
 })
 
 const boton = document.getElementById('boton');
