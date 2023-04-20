@@ -16,7 +16,6 @@ boton1.addEventListener('click', function() {
   preguntas.style.display = 'block';
   const nombre = nombreInput.value;
   alert(`Hola ${nombre}!, vamos a jugar!!`);
-
 })
 
 const boton = document.getElementById('boton');
@@ -29,17 +28,12 @@ boton.addEventListener('click', function() {
   document.getElementById('nueva').style.color = 'green';
   document.getElementById('marie').style.color = 'green';
  
-
-
-  
   let correctas = 0; //condicional
 
   if (respuesta1 && respuesta1.hasAttribute('data-correct')) {
     correctas++;
-  
   } else {
     document.getElementById(respuesta1.id).style.color = 'red';
-
   }
 
   if (respuesta2 && respuesta2.hasAttribute('data-correct')) {

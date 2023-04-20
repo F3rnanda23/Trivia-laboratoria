@@ -1,7 +1,7 @@
 body {
   background:#f4f3ee;
- color:#222222;
- font-family: 'Bebas Neue';
+  color:#222222;
+  font-family: 'Bebas Neue';
 }
 
 .texto {
@@ -41,15 +41,13 @@ body {
   margin: 100px auto; 
 }
 
-
-
 .title {
  font: 'Bebas Neue'; 
  
 }
 
 .subtitle {
- font-size: px;
+ font-size: 20px;
 }
 
 label {
@@ -63,7 +61,6 @@ padding: 30px;
 
 #nombre {
   border-radius: 5px;
-  
 }
 
 .contenedor-botones {
@@ -161,9 +158,9 @@ button, input[type="button"] {
   text-align: center;
 }
 footer {
-       position: fixed;
-       bottom: 0;
-       right: 0;
-       color:#222222;
-       padding: 10px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color:#222222;
+  padding: 10px;
 }
