@@ -65,7 +65,7 @@ boton.addEventListener('click', function() {
     resultados.style.display = 'block';                                // MUESTRA MENSAJE PARA VOLVER A JUGAR
 
   }else{
-    alert("DebeS seleccionar todas las alternativas")
+    alert("Debes seleccionar todas las alternativas")
   }
 
 });
