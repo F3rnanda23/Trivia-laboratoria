@@ -24,44 +24,51 @@ boton.addEventListener('click', function() {
   const respuesta2 = document.querySelector('input[name="q2"]:checked');
   const respuesta3 = document.querySelector('input[name="q3"]:checked'); 
 
-  document.getElementById('ada').style.color = 'green';  // cuando es chequeado se pone green
-  document.getElementById('nueva').style.color = 'green';
-  document.getElementById('marie').style.color = 'green';
  
-  let correctas = 0; //condicional
+  let cantCorrectas = 0;                                               
 
-  if (respuesta1 && respuesta1.hasAttribute('data-correct')) {
-    correctas++;
-  } else {
-    document.getElementById(respuesta1.id).style.color = 'red';
+  if(respuesta1 && respuesta2 && respuesta3)                            // SI LAS VARIABLES RESPUESTAS SON POSITIVAS SE HAN SELECCIONADO TODAS LAS ALTERNATIVAS
+  {
+    if (respuesta1 && respuesta1.hasAttribute('data-correct')) {
+      cantCorrectas++;
+    } else {
+      document.getElementById(respuesta1.id).style.color = 'red';
+    }
+
+    if (respuesta2 && respuesta2.hasAttribute('data-correct')) {
+      cantCorrectas++;
+    } else {
+      document.getElementById(respuesta2.id).style.color = 'red';
+    }
+    
+    if (respuesta3 && respuesta3.hasAttribute('data-correct')) { 
+      cantCorrectas++;
+    } else {
+      document.getElementById(respuesta3.id).style.color = 'red';
+    }
+
+    document.getElementById('ada').style.color = 'green';         
+    document.getElementById('nueva').style.color = 'green';
+    document.getElementById('marie').style.color = 'green';  
+
+    if (cantCorrectas === 3) { 
+      alert('Amiga, todas las respuestas son correctas!');
+    } else if (cantCorrectas === 2) {
+      alert('Amiga, acertaste dos respuestas');
+    } else if (cantCorrectas === 1) {
+      alert('Amiga, solo acertaste una respuesta');
+    } else {
+      alert('Amiga, no acertaste ninguna respuesta');
+    }
+
+    numCorrectas.innerHTML = `Tuviste ${cantCorrectas} respuestas correctas`;
+    resultados.style.display = 'block';                                // MUESTRA MENSAJE PARA VOLVER A JUGAR
+
+  }else{
+    alert("DebeS seleccionar todas las alternativas")
   }
 
-  if (respuesta2 && respuesta2.hasAttribute('data-correct')) {
-    correctas++;
-  } else {
-    document.getElementById(respuesta2.id).style.color = 'red';
-  }
-  
-  if (respuesta3 && respuesta3.hasAttribute('data-correct')) { 
-    correctas++;
-  } else {
-    document.getElementById(respuesta3.id).style.color = 'red';
-  }
-
-
-
-  if (correctas === 3) { 
-    alert('Amiga, todas las respuestas son correctas!');
-  } else if (correctas === 2) {
-    alert('Amiga, acertaste dos respuestas');
-  } else if (correctas === 1) {
-    alert('Amiga, solo acertaste una respuesta');
-  } else {
-    alert('Amiga, no acertaste ninguna respuesta');
-  }
-
-  numCorrectas.innerHTML = `Tuviste ${correctas} respuestas correctas`;
-  resultados.style.display = 'block';
-  
 });
+  
+  
 
