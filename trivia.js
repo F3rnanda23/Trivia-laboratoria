@@ -32,7 +32,7 @@ boton.addEventListener('click', function() {
 
 
   
-  let correctas = 0;
+  let correctas = 0; //condicional
 
   if (respuesta1 && respuesta1.hasAttribute('data-correct')) {
     correctas++;
@@ -56,7 +56,7 @@ boton.addEventListener('click', function() {
 
 
 
-  if (correctas === 3) { // Cambio de 2 a 3
+  if (correctas === 3) { 
     alert('Amiga, todas las respuestas son correctas!');
   } else if (correctas === 2) {
     alert('Amiga, acertaste dos respuestas');
@@ -66,9 +66,7 @@ boton.addEventListener('click', function() {
     alert('Amiga, no acertaste ninguna respuesta');
   }
 
-  numCorrectas.textContent = `Tuviste ${correctas} respuestas correctas`;
-
-  //preguntas.style.display = 'none';
+  numCorrectas.innerHTML = `Tuviste ${correctas} respuestas correctas`;
   resultados.style.display = 'block';
   
 });
